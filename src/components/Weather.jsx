@@ -19,7 +19,7 @@ const Weather = () => {
           location: data.location.name,
           country: data.location.country,
           today: data.current.last_updated,
-          temperature: data.current.temp_c,
+          temperature: Math.round(data.current.temp_c),
           precip: data.current.precip_mm,
           humidity: data.current.humidity,
           icon: data.current.condition.icon,
@@ -46,12 +46,11 @@ const Weather = () => {
                  
           {/* LEFT SIDE CONTAINER */}
           <div className="left">
-          <p>Text:{weather.text}</p>
           <b>{moment(weather.today).format("dddd")}</b>
           <p>{moment(weather.today).format("D MMM YY")}</p>
           <p>{weather.location}, {weather.country}</p>
           <p><img src={weather.icon}></img></p>
-          <p>{weather.temperature}°C</p>
+          <p className="temp">{weather.temperature}°C</p>
           <p>{weather.text}</p>
           </div>
 

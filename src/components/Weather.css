@@ -3,7 +3,7 @@
     margin-top: 20px;
     place-self: center;
     width: 100vh;
-    height: 50vh;
+    height: 70vh;
     padding: 40px;
     border-radius: 10px;
     background-image: linear-gradient(45deg, #fdfdfd, #5b66fc);
@@ -27,27 +27,47 @@ button {
     margin: auto;
     height: 3rem;
     border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
 .result{
-    border: 1px solid black;
     display:flex;
     justify-content: center;
     align-items: center;
-    width: fit-content;
-    
+    width: 90vh;
 
     
 }
 
 .left{
     border: 1px solid black;
-    
+    width: 35vh;
+    height: 40vh;
+    border-radius: 10%;
+    padding: 1rem;
 }
+
+.left img{
+    margin-top: 2rem;
+    width: 80px;
+}
+
+.temp{
+    font-weight: bold;
+    font-size: xx-large;
+}
+
 .right{
     border: 1px solid black;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 10%;
+    padding: 1rem;
+
 
 }
 
