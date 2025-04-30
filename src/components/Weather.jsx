@@ -56,8 +56,8 @@ const Weather = () => {
 
           {/* RIGHT SIDE CONTAINER */}
           <div className="right">
-          <p>PRECIPITATION: {weather.precip}</p>
-          <p>HUMIDITY:{weather.humidity}</p>
+          <p>PRECIPITATION: {weather.precip}%</p>
+          <p>HUMIDITY:{weather.humidity}%</p>
           <p>WIND:{weather.wind} km/h</p>
           </div>
 
