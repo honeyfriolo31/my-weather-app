@@ -39,7 +39,8 @@ const Weather = () => {
     <div className="weather">
         <div className="search-bar">
         <input ref={inputRef} type="text" className="search-bar" placeholder='Search the country/city' />
-        <button type="button" onClick={()=>search(inputRef.current.value)}>Enter</button>
+        {/* <button type="button" onClick={()=>search(inputRef.current.value)}>Enter</button> */}
+        <i className="fa fa-search" aria-hidden="true" onClick={()=>search(inputRef.current.value)}></i>
          </div>
         
          <div className="result">
@@ -49,16 +50,24 @@ const Weather = () => {
           <b>{moment(weather.today).format("dddd")}</b>
           <p>{moment(weather.today).format("D MMM YY")}</p>
           <p>{weather.location}, {weather.country}</p>
-          <p><img src={weather.icon}></img></p>
+          <img src={weather.icon}></img>
           <p className="temp">{weather.temperature}°C</p>
           <p>{weather.text}</p>
           </div>
 
           {/* RIGHT SIDE CONTAINER */}
           <div className="right">
-          <p>PRECIPITATION: {weather.precip}%</p>
-          <p>HUMIDITY:{weather.humidity}%</p>
-          <p>WIND:{weather.wind} km/h</p>
+              <ul class="title">
+              <li>PRECIPITATION:</li>
+              <li>HUMIDITY:</li>
+              <li>WIND:</li>
+            </ul>
+
+            <ul class="data">
+              <li>{weather.precip}%</li>
+              <li>{weather.humidity}%</li>
+              <li>{weather.wind} km/h</li>
+            </ul>
           </div>
 
          </div>

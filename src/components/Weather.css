@@ -1,75 +1,108 @@
 .weather{
-    border: 5px solid black;
     margin-top: 20px;
     place-self: center;
     width: 100vh;
     height: 70vh;
     padding: 40px;
     border-radius: 10px;
-    background-image: linear-gradient(45deg, #fdfdfd, #5b66fc);
+    background-image: linear-gradient(20deg, #fdfdfd, #1b4d66);
 }
 
 .search-bar {
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 18rem;
-    height: 3rem;
-    border-radius: .5rem;
+    width: 90%;
+    height: 2.5rem;
+    border-radius: 2rem;
     padding: 1rem;
 }
 
-button {
-    background-color: rgb(46, 153, 241);
-    color: #fdfdfd;
-    margin: auto;
-    height: 3rem;
-    border-radius: .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+input:focus {
+    outline: none;
+    border: none;
+
 }
+
+.fa-search {
+    margin-top: 2rem;
+    width: 5%; 
+    font-size: 30px;
+    color: rgba(180, 180, 180, 0.819);
+    justify-content: center;
+
+}
+
+.fa-search:hover{
+    color:rgb(227, 219, 219) !important;
+ }
+
 
 .result{
     display:flex;
     justify-content: center;
     align-items: center;
     width: 90vh;
-
-    
 }
 
 .left{
     border: 1px solid black;
+    position: relative;
     width: 35vh;
     height: 40vh;
     border-radius: 10%;
     padding: 1rem;
+    background-image: url("../img/left-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.3); /* black overlay at 50% opacity */
+    background-blend-mode: multiply;
+    color: white;
+    
 }
 
 .left img{
-    margin-top: 2rem;
+    margin-top: 3rem;
     width: 80px;
+    /* border: 1px solid black; */
+    margin-bottom: 0;
+    position: absolute;
 }
 
 .temp{
+    margin-top: 7.5rem;
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 40px;
 }
 
 .right{
     border: 1px solid black;
-    background-color: #3d4048;
+    background-color: #333346;
     width: 35vh;
     height: 35vh;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
     padding: 1rem;  
     color: #fdfdfd;
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+    /* display: flex; */
+}
+
+.title{
+    float: left;
+    font-weight: 500;
+
+}
+
+.data{
+    float: right;
+    text-align: right;
+    padding-left: 2rem;
 }
 
 .right p{
@@ -77,9 +110,13 @@ button {
 }
 
 
-img {
-    width: 10rem;
-}
+/* .left img {
+    border: 1px solid black;
+    position: relative;
+    width: 5rem;
+    margin-bottom: 0;
+    margin: fi;
+} */
 
 button {
     width: 5rem;

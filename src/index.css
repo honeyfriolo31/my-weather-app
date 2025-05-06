@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  font-size: 15px;
 }
 
 /* .body {
@@ -21,7 +22,7 @@
 .app {
   min-height: 90vh;
   display: grid;
-  background: rgb(67, 70, 71);
+  background: rgb(74, 79, 79);
 }
 
 footer {
