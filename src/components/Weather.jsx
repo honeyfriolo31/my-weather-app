@@ -37,14 +37,12 @@ const Weather = () => {
 
   return (
     <div className="weather">
-        <div className="search-bar">
+        <div className="search">
         <input ref={inputRef} type="text" className="search-bar" placeholder='Search the country/city' />
         {/* <button type="button" onClick={()=>search(inputRef.current.value)}>Enter</button> */}
         <i className="fa fa-search" aria-hidden="true" onClick={()=>search(inputRef.current.value)}></i>
          </div>
-        
-         <div className="result">
-                 
+         <div className="result">   
           {/* LEFT SIDE CONTAINER */}
           <div className="left">
           <b>{moment(weather.today).format("dddd")}</b>
